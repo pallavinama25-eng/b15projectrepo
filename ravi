@@ -1,1 +1,15 @@
 enduku neeku avsramma
+# inline
+#include<iostream>
+using namespace std;
+inline int max_of_four(int a,int b,int c ,int d)
+{
+	int max1=(a > b ? a : b);
+	int max2 = (c > d ? c : d);
+	int max_of_four = (max1 > max2 ? max1 : max2);
+	return max_of_four;
+}
+int main()
+{
+	cout<<max_of_four(10,20,40,60);
+}
