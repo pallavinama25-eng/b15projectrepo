@@ -1,0 +1,18 @@
+#swaping of numbers:
+
+#include<iostream>
+using namespace std;
+void swap(int &a,int &b)
+{
+	int temp = a;
+	     a = b;
+	     b = temp;
+}
+int main()
+{
+	int x = 10,y = 20;
+	cout<<"before swaping = "<<x<<" "<<y<<endl;
+	swap(x,y);
+	cout<<"after swaping = "<<x<<" "<<y<<endl;
+	
+}
