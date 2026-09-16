@@ -1,0 +1,29 @@
+/// SINGLE INHERITANCE ///
+#include<iostream>
+using namespace std;
+class x
+{
+	public:
+		int x,y;
+	void get()
+	{
+		x=10;
+		y=20;
+	}
+};
+class z:public x
+{
+	public:
+		int total;
+	void show()
+	{
+		total = x+y;
+		cout<<"add = "<<total;
+	}
+};
+int main()
+{
+	z d;
+	d.get();
+	d.show();
+}
